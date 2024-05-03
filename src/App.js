@@ -29,7 +29,7 @@ function App() {
         <Route exact path="/" element={<Login />} />
         <Route path="/login" exact element={<Login />} />
         <Route path="/signup" exact element={<Signup />} />
-        <Route path="/home*" exact element={isLoggedIn ? <Home/> : <Navigate to="/login"/>} />
+        <Route path="/home" exact element={isLoggedIn ? <Home/> : <Navigate to="/login"/>} />
       </Routes>
 
     </div>
