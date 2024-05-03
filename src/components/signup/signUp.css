@@ -120,3 +120,24 @@
     align-items: center;
     margin-left: 10px;
 }
+
+
+@media(max-width:600px) {
+    .mainSignUp .box {
+        width: 350px;
+    }
+
+    .mainSignUp .box .inputContainerLog {
+        flex-direction: column;
+    }
+
+    .mainSignUp .box .inputContainerLog .para {
+        width: 70%;
+        margin-bottom: 5px;
+    }
+
+    .mainSignUp .box .inputContainerLog .btn  {
+        width: 30%;
+        margin-top: 5px;
+    }
+}
