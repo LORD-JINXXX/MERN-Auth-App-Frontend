@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate} from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import React, { useEffect } from 'react';
+import Login from "./components/login/Login";
+import Signup from "./components/signup/Signup";
+import Home from "./pages/Home";
+
 
 function App() {
+
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+  const token = localStorage.getItem("token");
+
+  useEffect(() => {
+    localStorage.setItem('isLoggedIn', isLoggedIn);
+    localStorage.setItem('token', token);
+  }, [isLoggedIn, token])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+      />
+
+      <Routes>
+        <Route exact path="/" element={<Login />} />
+        <Route path="/login" exact element={<Login />} />
+        <Route path="/signup" exact element={<Signup />} />
+        <Route path="/home*" exact element={isLoggedIn ? <Home/> : <Navigate to="/login"/>} />
+      </Routes>
+
     </div>
   );
 }
