@@ -18,6 +18,7 @@
     flex-direction: column;
     background-color: #fff;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .mainHome .box .inputContainerOne {
@@ -52,4 +53,10 @@
     align-items: center;
     flex-direction: column;
     margin: 10px 0;
+}
+
+@media(max-width:600px) {
+    .mainHome .box {
+        width: 300px;
+    }
 }
