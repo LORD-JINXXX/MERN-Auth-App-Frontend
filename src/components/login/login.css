@@ -120,3 +120,23 @@
     align-items: center;
     margin-left: 10px;
 }
+
+@media(max-width:600px) {
+    .mainLogIn .box {
+        width: 350px;
+    }
+
+    .mainLogIn .box .inputContainerLog {
+        flex-direction: column;
+    }
+
+    .mainLogIn .box .inputContainerLog .para {
+        width: 70%;
+        margin-bottom: 5px;
+    }
+
+    .mainLogIn .box .inputContainerLog .btn  {
+        width: 30%;
+        margin-top: 5px;
+    }
+}
