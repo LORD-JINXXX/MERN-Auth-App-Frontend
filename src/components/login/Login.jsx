@@ -138,7 +138,7 @@ const Login = () => {
 
                     <div className="inputContainerLog">
                         <Typography variant="h1" component="h3" className='para'>
-                            Already have an account? Please login.
+                            Don't have an account? Please Signup.
                         </Typography>
 
                         <Stack direction="row" spacing={2} className='btn'>
