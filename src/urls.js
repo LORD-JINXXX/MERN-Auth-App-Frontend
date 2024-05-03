@@ -1,3 +1,3 @@
-const base_url = "http://localhost:8000";
+const base_url = "https://mern-auth-app-backend-a1qt.onrender.com";
 
 export default base_url;
