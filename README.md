@@ -12,7 +12,7 @@
 
 ## Installation
 
-### Clone this repository: git clone https://github.com/yourusername/mern-authentication-frontend.git
+### Clone this repository: git clone https://github.com/LORD-JINXXX/MERN-Auth-App-Frontend.git
 ### Navigate to the project directory: cd mern-authentication-frontend
 ### Install dependencies: npm install
 
